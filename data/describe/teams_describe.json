@@ -1,0 +1,18 @@
+{
+    "column_descriptions": {
+        "LEAGUE_ID": "ID of the league (here only NBA)",
+        "TEAM_ID": "ID of the team",
+        "MIN_YEAR": "Minimum year of the team into NBA championship",
+        "MAX_YEAR": "Maximum year of the team into NBA championship",
+        "ABBREVIATION": "Abbreviation of team name",
+        "NICKNAME": "Team's nickname",
+        "YEARFOUNDED": "Founded Year",
+        "CITY": "Team's city",
+        "ARENA": "Team's stadium",
+        "ARENACAPACITY": "Capacity of the stadium",
+        "OWNER": "Owner of the team (last one)",
+        "GENERALMANAGER": "General manager",
+        "HEADCOACH": "Head coach",
+        "DLEAGUEAFFILIATION": "League Affiliation"
+    }
+}

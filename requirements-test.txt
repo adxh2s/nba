@@ -1,0 +1,4 @@
+# pytest-watch pour automatisation de découvertes des tests
+pytest
+pytest-watch
+pytest-env

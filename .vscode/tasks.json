@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "pytest-watch",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv_311/Scripts/ptw",
+      "windows": {
+        "command": ".venv_311\\Scripts\\ptw.exe"
+      },
+      "args": [
+        "tests"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    }
+  ]
+}

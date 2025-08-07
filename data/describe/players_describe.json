@@ -1,0 +1,8 @@
+{
+    "column_descriptions": {
+        "PLAYER_NAME": "Player's name",
+        "TEAM_ID": "ID of the team",
+        "PLAYER_ID": "ID of the player",
+        "SEASON": "Season"
+    }
+}

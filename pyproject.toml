@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nba"
+version = "0.1.0"
+description = "Un projet Data ML en Python"
+authors = [{ name = "Auteur", email = "auteur@example.com" }]
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.black]
+line-length = 79
+
+[tool.ruff]
+line-length = 79
+target-version = "py311"
+exclude = [
+  "build/",
+  "docs/",
+  ".git",
+  "__pycache__",
+  "build",
+  "dist",
+  "venv",
+  ".venv"
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "UP", "B", "SIM", "I"]
+ignore = [
+  # "E501"  # décommente pour ignorer les lignes trop longues, si souhaité
+]
+extend-ignore = [
+  # "E203", # Whitespace before ':', compatible avec Black
+  # "W503"  # Line break before binary operator, compatible avec Black
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "pep257"
+

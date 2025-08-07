@@ -1,0 +1,17 @@
+{
+    "column_descriptions": {
+        "TEAM_ID": "ID of the team",
+        "LEAGUE_ID": "ID of the league (here only NBA)",
+        "SEASON_ID": "Season",
+        "STANDINGSDATE": "Standings date",
+        "CONFERENCE": "Conference (west or east)",
+        "TEAM": "Team name",
+        "G": "Number of games played on the season",
+        "W": "Number of winning games on the season",
+        "L": "Number of losing games on the season",
+        "W_PCT": "Win %",
+        "HOME_RECORD": "Home record on the season",
+        "ROAD_RECORD": "Road record on the season",
+        "RETURNTOPLAY": "No description"
+    }
+}

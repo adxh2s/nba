@@ -1,0 +1,25 @@
+{
+    "column_descriptions": {
+        "GAME_DATE_EST": "Game's date",
+        "GAME_ID": "ID of the game",
+        "GAME_STATUS_TEXT": "Status : Final means that the game is completed",
+        "HOME_TEAM_ID": "ID of the home team",
+        "VISITOR_TEAM_ID": "ID of the visitor team",
+        "SEASON": "Season when the game occurred",
+        "TEAM_ID_home": "ID of the home team (duplicate of HOME_TEAM_ID)",
+        "PTS_home": "Number of points scored by home team",
+        "FG_PCT_home": "Field Goal Percentage home team",
+        "FT_PCT_home": "Free Throw Percentage of the home team",
+        "FG3_PCT_home": "Three Point Percentage of the home team",
+        "AST_home": "Assists of the home team",
+        "REB_home": "Rebounds of the home team",
+        "TEAM_ID_away": "ID of the away team (duplicate of VISITOR_TEAM_ID)",
+        "PTS_away": "Number of points scored by away team",
+        "FG_PCT_away": "Field Goal Percentage away team",
+        "FT_PCT_away": "Free Throw Percentage of the away team",
+        "FG3_PCT_away": "Three Point Percentage of the away team",
+        "AST_away": "Assists of the away team",
+        "REB_away": "Rebounds of the away team",
+        "HOME_TEAM_WINS": "If home team won the game"
+    }
+}

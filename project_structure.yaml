@@ -1,0 +1,103 @@
+root:
+  name: nba
+  structure:
+    conf:
+      type: "folder"
+      pattern: "*.json, *.cfg, *.config"
+      description: "Configuration"
+      content: []
+    data:
+      type: "folder"
+      pattern: "*.txt, *.xlsx, *.csv"
+      description: "Données"
+      content:
+        raw:
+          type: "folder"
+          pattern: "*.txt, *.xlsx, *.csv"
+          description: "Données brutes"
+          content: []
+        processed:
+          type: "folder"
+          pattern: "*.txt, *.xlsx, *.csv"
+          description: "Données traitées"
+          content: []
+        describe:
+          type: "folder"
+          pattern: "*.json"
+          description: "Fichiers de description des colonnes pour CSV et DataFrame"
+          content: []          
+    src:
+      type: "folder"
+      description: "Code source"
+      content:
+        modules:
+          type: "folder"
+          description: "Modules"
+          content:
+            utils:
+              type: "package"
+              pattern: "*.py"
+              description: "Fonctions utilitaires Python"
+              content: []
+            models:
+              type: "package"
+              pattern: "*.py"
+              description: "Modèles machine learning"
+              content: []
+            preprocessing:
+              type: "package"
+              pattern: "*.py"
+              description: "Prétraitement des données"
+              content: []
+            features:
+              type: "package"
+              pattern: "*.py"
+              description: "Extraction ou construction de features"
+              content: []
+            reporting:
+              type: "package"
+              pattern: "*.py"
+              description: "Génération de rapports"
+              content: []
+        scripts:
+          type: "folder"
+          pattern: "*.py"
+          description: "Scripts"
+          content: []
+    notebooks:
+      type: "folder"
+      pattern: "*.ipynb"
+      description: "Notebooks Jupyter"
+      content: []
+    tests:
+      type: "folder"
+      pattern: "test_*.py"
+      description: "Tests unitaires"
+      content: []
+    logs:
+      type: "folder"
+      pattern: "*.log"
+      description: "Fichiers de log"
+      content: []
+    docs:
+      type: "folder"
+      description: "Documentation"
+      content:
+        reports:
+          type: "folder"
+          description: "Rapports"
+          content:
+            html:
+              type: "folder"
+              pattern: "*.html"
+              description: "Rapports HTML"
+              content: []
+    .github:
+      type: "folder"
+      description: "GitHub files"
+      content:
+        workflows:
+          type: "folder"
+          pattern: "*.yml"
+          description: "Workflows GitHub Actions"
+          content: []

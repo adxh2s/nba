@@ -1,0 +1,4 @@
+{
+  "report_filename": "{date:%Y%m%d%H%M}_{input}_report",
+  "report_filename_extension": "html"
+}

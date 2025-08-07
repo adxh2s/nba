@@ -1,0 +1,33 @@
+{
+    "column_descriptions": {
+        "GAME_ID": "ID of the game",
+        "TEAM_ID": "ID of the team",
+        "TEAM_ABBREVIATION": "Team's abbreviation",
+        "TEAM_CITY": "City where the game was played",
+        "PLAYER_ID": "ID of the player",
+        "PLAYER_NAME": "Player's name",
+        "NICKNAME": "Position of the player (if nothing then he's on the bench)",
+        "START_POSITION": "Comment",
+        "COMMENT": "Minutes played",
+        "MIN": "Field Goals Made",
+        "FGM": "Field Goals Attempted",
+        "FGA": "Field Goal Percentage",
+        "FG_PCT": "Three Pointers Made",
+        "FG3M": "Three Pointers Attempted",
+        "FG3A": "Three Point Percentage",
+        "FG3_PCT": "Free Throws Made",
+        "FTM": "Free Throws Attempted",
+        "FTA": "Free Throw Percentage",
+        "FT_PCT": "Offensive Rebounds",
+        "OREB": "Defensive Rebounds",
+        "DREB": "Rebounds",
+        "REB": "Assists",
+        "AST": "Steals",
+        "STL": "Blocked shots",
+        "BLK": "Turnovers",
+        "TO": "Personal Foul",
+        "PF": "Number of points scored by the player",
+        "PTS": "Points",
+        "PLUS_MINUS": "Plus - Minus"
+    }
+}

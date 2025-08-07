@@ -1,0 +1,37 @@
+{
+  "version": "0.1.0",
+  "configurations": [
+    {
+      "name": "Python: Dev",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/scripts/mon_script.py",
+      "envFile": "${workspaceFolder}/.env.dev",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: Recette",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/scripts/mon_script.py",
+      "envFile": "${workspaceFolder}/.env.recette",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: Preprod",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/scripts/mon_script.py",
+      "envFile": "${workspaceFolder}/.env.preprod",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: Prod",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/scripts/mon_script.py",
+      "envFile": "${workspaceFolder}/.env.prod",
+      "console": "integratedTerminal"
+    }
+  ]
+}

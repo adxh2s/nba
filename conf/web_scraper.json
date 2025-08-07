@@ -1,0 +1,6 @@
+{
+  "output_dir": "/docs/reports/html",
+  "parser": "lxml",
+  "from_encoding": "utf-8",
+  "preserve_whitespace_tags": ["pre", "textarea"]
+}
