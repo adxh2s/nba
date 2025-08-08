@@ -1,0 +1,29 @@
+{
+  "version": "v1",
+  "date_mask": "%Y%m%d",
+  "output_dir": "data/raw",
+  "api": {
+    "base_url": "https://stats.nba.com/stats",
+    "api_key": null,
+    "exports": [
+      {
+        "endpoint": "/commonteamroster",
+        "filename": "team_roster",
+        "fields": ["TeamID", "PlayerID", "Player", "Jersey", "Position"],
+        "params": {"TeamID": "1610612737", "Season": "2024-25"}
+      },
+      {
+        "endpoint": "/leaguedashplayerstats",
+        "filename": "player_stats",
+        "fields": ["PLAYER_ID", "PLAYER_NAME", "TEAM_ID", "PTS", "REB", "AST"],
+        "params": {"Season": "2024-25", "PerMode": "PerGame"}
+      },
+      {
+        "endpoint": "/scoreboard",
+        "filename": "scoreboard",
+        "fields": ["gameId", "gameStatusText", "hTeam", "vTeam"],
+        "params": {"gameDate": "2025-08-08"}
+      }
+    ]
+  }
+}

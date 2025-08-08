@@ -1,6 +1,13 @@
 {
-  "output_dir": "/docs/reports/html",
+  "output_dir": "docs/reports/html",
+  "max_pages": 100,
+  "max_depth": 3,
+  "min_delay": 1.0,
+  "max_delay": 3.0,
+  "user_agent": "Mozilla/5.0 (compatible; MyScraperBot/1.0; +http://example.com/bot)",
   "parser": "lxml",
   "from_encoding": "utf-8",
   "preserve_whitespace_tags": ["pre", "textarea"]
+
 }
+

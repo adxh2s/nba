@@ -4,7 +4,7 @@ import time
 from pathlib import Path
 
 import pytest
-from modules.utils.logger_tools import init_logger, log_function_call
+from packages.tools.logger_tools_proc import init_logger, log_function_call
 
 
 def test_init_logger_creates_file_and_logger(tmp_path: Path):

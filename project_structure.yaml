@@ -4,80 +4,105 @@ root:
     conf:
       type: "folder"
       pattern: "*.json, *.cfg, *.config"
-      description: "Configuration"
+      description: "Configuration files"
       content: []
     data:
       type: "folder"
       pattern: "*.txt, *.xlsx, *.csv"
-      description: "Données"
+      description: "Data files"
       content:
         raw:
           type: "folder"
           pattern: "*.txt, *.xlsx, *.csv"
-          description: "Données brutes"
+          description: "Raw data"
           content: []
         processed:
           type: "folder"
           pattern: "*.txt, *.xlsx, *.csv"
-          description: "Données traitées"
+          description: "Processed data"
           content: []
         describe:
           type: "folder"
           pattern: "*.json"
-          description: "Fichiers de description des colonnes pour CSV et DataFrame"
-          content: []          
+          description: "Column description files for CSV and DataFrames"
+          content: []
     src:
       type: "folder"
-      description: "Code source"
+      description: "Source code"
       content:
-        modules:
+        packages:
           type: "folder"
-          description: "Modules"
+          description: "Python packages"
           content:
-            utils:
+            tools:
               type: "package"
               pattern: "*.py"
-              description: "Fonctions utilitaires Python"
-              content: []
-            models:
-              type: "package"
-              pattern: "*.py"
-              description: "Modèles machine learning"
-              content: []
-            preprocessing:
-              type: "package"
-              pattern: "*.py"
-              description: "Prétraitement des données"
-              content: []
-            features:
-              type: "package"
-              pattern: "*.py"
-              description: "Extraction ou construction de features"
-              content: []
-            reporting:
-              type: "package"
-              pattern: "*.py"
-              description: "Génération de rapports"
-              content: []
-        scripts:
-          type: "folder"
-          pattern: "*.py"
-          description: "Scripts"
-          content: []
+              description: "Utility library with subpackages"
+              content:
+                api:
+                  type: "package"
+                  pattern: "*.py"
+                  description: "API clients and processing"
+                  content: []
+                web:
+                  type: "package"
+                  pattern: "*.py"
+                  description: "Web scraping utilities"
+                  content: []
+                file:
+                  type: "package"
+                  pattern: "*.py"
+                  description: "File and path utilities"
+                  content: []
+                logger:
+                  type: "package"
+                  pattern: "*.py"
+                  description: "Logging utilities"
+                  content: []
+                messages:
+                  type: "package"
+                  pattern: "*.py"
+                  description: "Gestion des messages"
+                  content:
+                    __init__.py:
+                      type: "file"
+                      description: "Initialisation du package messages"
+                    message_model.py:
+                      type: "file"
+                      description: "Modèles de données liés aux messages"
+                    message_service.py:
+                      type: "file"
+                      description: "Services pour la gestion des messages"
+                    utils:
+                      type: "folder"
+                      pattern: "*.py"
+                      description: "Fonctions utilitaires pour les messages"
+                      content:
+                        __init__.py:
+                          type: "file"
+                          description: "Initialisation du package utils"
+                        formatter.py:
+                          type: "file"
+                          description: "Fonctions de formatage des messages"
+    scripts:
+      type: "folder"
+      pattern: "*.py"
+      description: "Execution scripts"
+      content: []
     notebooks:
       type: "folder"
       pattern: "*.ipynb"
-      description: "Notebooks Jupyter"
+      description: "Jupyter notebooks"
       content: []
     tests:
       type: "folder"
       pattern: "test_*.py"
-      description: "Tests unitaires"
+      description: "Unit tests"
       content: []
     logs:
       type: "folder"
       pattern: "*.log"
-      description: "Fichiers de log"
+      description: "Log files"
       content: []
     docs:
       type: "folder"
@@ -85,19 +110,41 @@ root:
       content:
         reports:
           type: "folder"
-          description: "Rapports"
+          description: "Reports"
           content:
             html:
               type: "folder"
               pattern: "*.html"
-              description: "Rapports HTML"
+              description: "HTML reports"
               content: []
     .github:
       type: "folder"
-      description: "GitHub files"
+      description: "GitHub config files"
       content:
         workflows:
           type: "folder"
           pattern: "*.yml"
-          description: "Workflows GitHub Actions"
+          description: "GitHub Actions workflows"
           content: []
+    locales:
+      type: "folder"
+      description: "Fichiers de localisation"
+      content:
+        fr:
+          type: "folder"
+          description: "Localisation française"
+          content:
+            LC_MESSAGES:
+              type: "folder"
+              pattern: "*.mo, *.po"
+              description: "GNU gettext message catalogs français"
+              content: []
+        en:
+          type: "folder"
+          description: "Localisation anglaise"
+          content:
+            LC_MESSAGES:
+              type: "folder"
+              pattern: "*.mo, *.po"
+              description: "GNU gettext message catalogs anglais"
+              content: []

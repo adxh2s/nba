@@ -7,24 +7,24 @@ Ce projet est une structure standard pour un projet Data Science / Machine Learn
 ## Arborescence du projet
 
 - `data/`
-  - `raw/` : Données brutes importées, non modifiées.
-  - `processed/` : Données nettoyées et transformées, prêtes à l'analyse.
+  - `raw/` : Donnï¿½es brutes importï¿½es, non modifiï¿½es.
+  - `processed/` : Donnï¿½es nettoyï¿½es et transformï¿½es, prï¿½tes ï¿½ l'analyse.
 - `src/modules/` : Package principal contenant le code source Python.
-  - `utils/` : Fonctions utilitaires génériques (chargement de données, etc.).
-  - `models/` : Modèles et scripts d'entraînement.
-  - `preprocessing/` : Nettoyage et préparation des données.
-  - `features/` : Création et transformation des features.
-  - `reporting/` : Génération et gestion des rapports.
+  - `utils/` : Fonctions utilitaires gï¿½nï¿½riques (chargement de donnï¿½es, etc.).
+  - `models/` : Modï¿½les et scripts d'entraï¿½nement.
+  - `preprocessing/` : Nettoyage et prï¿½paration des donnï¿½es.
+  - `features/` : Crï¿½ation et transformation des features.
+  - `reporting/` : Gï¿½nï¿½ration et gestion des rapports.
 - `src/scripts/` : Scripts autonomes pour automatisation.
 - `notebooks/` : Carnets Jupyter pour exploration et prototypage.
-- `tests/` : Tests unitaires et d'intégration.
+- `tests/` : Tests unitaires et d'intï¿½gration.
 - `logs/` : Fichiers logs.
 - `docs/` : Documentation.
   - `reports/html/` : Rapports HTML.
 - `.github/workflows/` : Workflows CI/CD.
 
 ## Installation
-Dépendances disponibles dans `requirements.txt`.
+Dï¿½pendances disponibles dans `requirements.txt`.
 
 ## Utilisation
 Exemples d'import :

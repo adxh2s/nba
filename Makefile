@@ -14,9 +14,13 @@ install:
 	python -m pip install --upgrade pip
 	python -m pip install -r requirements-dev.txt
 	python -m pip install pre-commit
+	python -m pip install playwright
 
 precommit:
 	pre-commit install
+
+playwright:
+	playwright install
 
 test:
 	pytest --maxfail=1 --disable-warnings -v

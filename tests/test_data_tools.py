@@ -4,7 +4,7 @@ from typing import Literal
 
 import pandas as pd
 import pytest
-from modules.utils import data_tools
+from packages.tools.data import data_validator
 
 
 def test_generate_report_creates_file_and_title(tmp_path: Path):
@@ -14,7 +14,7 @@ def test_generate_report_creates_file_and_title(tmp_path: Path):
 
     # Test avec title fourni
     title = "Mon Rapport"
-    data_tools.generate_report(df, str(output_file), title=title)
+    data_validator.generate_report(df, str(output_file), title=title)
     assert output_file.exists()
     with open(output_file, encoding="utf-8") as f:
         content = f.read()
@@ -23,7 +23,7 @@ def test_generate_report_creates_file_and_title(tmp_path: Path):
 
     # Test sans title (doit prendre nom fichier)
     output_file2 = tmp_path / "rapport2.html"
-    data_tools.generate_report(df, str(output_file2))
+    data_validator.generate_report(df, str(output_file2))
     assert output_file2.exists()
     with open(output_file2, encoding="utf-8") as f:
         content2 = f.read()
@@ -48,7 +48,7 @@ def test_generate_report_with_column_descriptions(tmp_path: Path):
     output_file2 = tmp_path / "report2.html"
 
     # Avec "columns"
-    data_tools.generate_report(
+    data_validator.generate_report(
         df, str(output_file1), description_schema=description_schema_columns
     )
     assert output_file1.exists()
@@ -58,7 +58,7 @@ def test_generate_report_with_column_descriptions(tmp_path: Path):
     assert "Description colonne A" in content1
 
     # Avec "column_descriptions"
-    data_tools.generate_report(
+    data_validator.generate_report(
         df, str(output_file2), description_schema=description_schema_col_desc
     )
     assert output_file2.exists()
@@ -75,7 +75,7 @@ def test_generate_report_empty_description(tmp_path: Path):
     output_file = tmp_path / "report_empty.html"
 
     # Pas de description fournie, devrait fonctionner sans erreur
-    data_tools.generate_report(
+    data_validator.generate_report(
         df, str(output_file), description_schema=description_schema_empty
     )
     assert output_file.exists()
@@ -90,7 +90,7 @@ def test_descriptions_ignored_if_column_missing(
     description_schema = {desc_key: {"Z": "description absente"}}
     output_file = tmp_path / "report_missing.html"
     # Devrait ignorer 'Z' et ne rien planter
-    data_tools.generate_report(
+    data_validator.generate_report(
         df, str(output_file), description_schema=description_schema
     )
     assert output_file.exists()

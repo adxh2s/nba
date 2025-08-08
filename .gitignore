@@ -13,3 +13,11 @@ wheels/
 *.csv
 *.html
 *.log
+
+# directories
+old/
+data/
+
+# exceptions
+!data/describe/
+!data/describe/**

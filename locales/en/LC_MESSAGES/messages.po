@@ -1,0 +1,6 @@
+msgid "init_app_success"
+msgstr "The application has been initialized successfully."
+
+msgid "init_app_error"
+msgstr "Error during application initialization."
+

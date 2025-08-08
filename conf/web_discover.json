@@ -1,0 +1,13 @@
+{
+  "start_url": "https://example.com",
+  "robots_txt_present": true,
+  "robots_txt_rules": null,
+  "found_pages": 50,
+  "unique_links_count": 128,
+  "max_depth_reached": 3,
+  "domain": "example.com",
+  "max_pages": 100,
+  "max_depth": 3,
+  "min_delay": 1.0,
+  "max_delay": 3.0
+}
